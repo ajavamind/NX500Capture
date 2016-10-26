@@ -12,3 +12,4 @@ S  system("st key push s2; st key release s2"); // shutter press and release
 
 R  system("st key release s2; st key release s1"); // focus and shutter release
 
+![App Screen](./NX500Capture/NX500app.png)
