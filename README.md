@@ -7,7 +7,6 @@ The code consists of two parts, 1) Broadcast message receiver in the NX500 camer
 
 ![App Screen](./NX500Capture/NX500app.png)
 
-
 The NX500 commands are:
 
 F  system("st key push s1") // focus press hold
@@ -25,6 +24,8 @@ The Processing library OSCP5 reference information used for UDP broadcast is ava
 https://www.processing.org for the Processing 3+ SDK, Android Mode
 
 Broadcast receiver code based on:
+
+https://github.com/mewlips/nx-remote-controller-mod
 
 https://www.experts-exchange.com/viewCodeSnippet.jsp?codeSnippetId=23948
 
