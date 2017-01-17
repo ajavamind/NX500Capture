@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/usr/apps/nx-remote/nx-remote-capture-daemon &
+/opt/storage/sdcard/mod/nx-remote-capture-daemon &
