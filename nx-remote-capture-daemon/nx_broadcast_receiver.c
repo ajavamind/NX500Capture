@@ -79,6 +79,12 @@ bool broadcast_receiver_run() {
 			else if (*buf == 'R') {
 				system("st key release s2; st key release s1"); // shutter release all
 			}
+			else if (*buf == 'V') {
+				system("st key click rec"); // video record start/stop
+			}
+			else if (*buf == 'P') {
+				system("st key click ok"); // video pause/resume
+			}
 			else if (*buf == 'X') {  // exit
 				break;
 			}
