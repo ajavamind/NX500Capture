@@ -15,19 +15,25 @@ This is a screen shot of the Processing Android app code running:
 ![App Screen](./NX500Capture/NX500app.png)
 The broadcast message text command codes correspond to the following NX500 "st" commands that simulate key press and release operations:
 
-F  system("st key push s1") // focus press hold
+Each code is a single ASCII letter, that may be followed by 4 ASCII digits for the photo number.
 
-C  system("st key push s2; st key release s2; st key release s1") // capture: shutter press and release all
+F  system("st key push s1") // focus press and hold
 
-S  system("st key push s2; st key release s2") // shutter press and release
+Cxxxx  system("st key push s2; st key release s2; st key release s1") // capture: shutter press and release all
+
+Sxxxx  system("st key push s2; st key release s2") // shutter press and release
 
 R  system("st key release s2; st key release s1") // focus and shutter release
 
-V  system("st key click rec") // video record start/stop
+Vxxxx  system("st key click rec") // video record start unless recording then stop
+
+V  system("st key click rec") // video record stop unless stopped then record
 
 P  system("st key click ok") // video pause/resume
 
 X  // exit
+
+xxxx is the photo number, example 0021
 
 ==========
 
